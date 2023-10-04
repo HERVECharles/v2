@@ -51,9 +51,9 @@
             </div>
 
             <div class="fieldcontain required">
-                <label for="login">Login
+                <label for="username">Login
                     <span class="required-indicator">*</span>
-                </label><input type="text" name="login" value="${user.login}" required="" maxlength="55" id="login">
+                </label><input type="text" name="username" value="${user.username}" required="" maxlength="55" id="username">
             </div>
 
             <div class="fieldcontain required">

@@ -3,9 +3,13 @@ package grails_estia_23_24
 class BootStrap {
 
     def init = { servletContext ->
+        def adminRole = new Role(authority: "ROLE_ADMIN").save()
+        def adminUser = new User(fname: "admin", lname: "admin", age: 18, username: "admin", password: "admin", phone: "0123456789").save()
+        UserRole.create(adminUser, adminRole, true)
+
         ["Alice", "Bob", "Charly", "Denis", "Etienne"].eachWithIndex {
             String fName, uIndex ->
-                def userInstance = new User(fname: fName, lname: "lname", age: 18 + uIndex, login: fName, password: "password", phone: "0123456789")
+                def userInstance = new User(fname: fName, lname: "lname", age: 18 + uIndex, username: fName, password: "password", phone: "0123456789")
 
                 def carInstance = new Car(brand: "Peugeot", model: "106", color: "blue")
                 (1..3).each {

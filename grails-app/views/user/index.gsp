@@ -32,7 +32,7 @@
 
             <th class="sortable"><a href="/user/index?sort=lname&amp;max=10&amp;order=asc">Lname</a></th>
 
-            <th class="sortable"><a href="/user/index?sort=login&amp;max=10&amp;order=asc">Login</a></th>
+            <th class="sortable"><a href="/user/index?sort=username&amp;max=10&amp;order=asc">Login</a></th>
 
             <th class="sortable"><a href="/user/index?sort=age&amp;max=10&amp;order=asc">Age</a></th>
 
@@ -47,7 +47,7 @@
         <g:each in="${userList}" var="user">
             <tr class="even">
                 <td>
-                    <g:link controller="user" action="show" id="${user.id}">${user.login}</g:link>
+                    <g:link controller="user" action="show" id="${user.id}">${user.username}</g:link>
                 </td>
                 <td>${user.lname}</td>
                 <td>${user.fname}</td>

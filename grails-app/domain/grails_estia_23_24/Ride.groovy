@@ -13,7 +13,6 @@ class Ride {
     Date dateCreated
     Date lastUpdated
 
-//    static belongsTo = [owner: User]
 
     static constraints = {
         start nullable: false

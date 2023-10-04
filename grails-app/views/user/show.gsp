@@ -36,8 +36,8 @@
                 </li>
 
                 <li class="fieldcontain">
-                    <span id="login-label" class="property-label">Login</span>
-                    <div class="property-value" aria-labelledby="login-label">${user.login}</div>
+                    <span id="username-label" class="property-label">Login</span>
+                    <div class="property-value" aria-labelledby="username-label">${user.username}</div>
                 </li>
 
                 <li class="fieldcontain">
@@ -64,17 +64,17 @@
 
                 <li class="fieldcontain">
                     <span id="brand-label" class="property-label">Login</span>
-                    <div class="property-value" aria-labelledby="login-label">${user.car.brand}</div>
+                    <div class="property-value" aria-labelledby="username-label">${user.car.brand}</div>
                 </li>
 
                 <li class="fieldcontain">
                     <span id="model-label" class="property-label">Login</span>
-                    <div class="property-value" aria-labelledby="login-label">${user.car.model}</div>
+                    <div class="property-value" aria-labelledby="username-label">${user.car.model}</div>
                 </li>
 
                 <li class="fieldcontain">
                     <span id="color-label" class="property-label">Login</span>
-                    <div class="property-value" aria-labelledby="login-label">${user.car.color}</div>
+                    <div class="property-value" aria-labelledby="username-label">${user.car.color}</div>
                 </li>
 
                 <li class="fieldcontain">

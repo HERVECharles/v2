@@ -3,6 +3,9 @@ package grails_estia_23_24
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
 
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured("ROLE_ADMIN")
 class RideController {
 
     RideService rideService

@@ -2,8 +2,10 @@ package grails_estia_23_24
 
 import grails.converters.JSON
 import grails.converters.XML
-import org.springframework.http.HttpMethod
 
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured("ROLE_ADMIN")
 class ApiController {
 
 
